@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" href="Bilder/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greencademy - E-Learning Plattform with a sustainable focus</title>
+    <style>
+        body {
+            font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8f0; /* Hintergrundfarbe in einem hellen Grün */
+            color: #004d00; /* Textfarbe in einem dunklen Grün */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('Bilder/Wald.jpg'); /* Hintergrundbild im Header */
+            background-size: cover; /* Das Bild wird so skaliert, dass es den Header vollständig abdeckt */
+            background-position: center; /* Zentriert das Hintergrundbild im Header */
+            color: #ffffff; /* Header Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Runde Ecken für das Bild */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für das Bild */
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #004d00; /* Navigationsleisten Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Navigationsleisten Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff; /* Farbe der Navigationsleistenlinks in Weiß */
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .has-dropdown {
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #004d00;
+            z-index: 1;
+            width: max-content;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .has-dropdown:hover .dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #ffffff;
+            padding: 0.5em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .has-dropdown:hover a {
+            color: #80ff80; /* Farbänderung bei Hover */
+        }
+
+        section {
+            margin: 2em;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Runde Ecken für das Bild */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für das Bild */
+        }
+
+        footer {
+            background-color: #006400; /* Footer Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Footer Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="css/kachel.css"><
+</head>
+<body>
+    <header >
+        <h1>Greencademy</h1>
+        <p>E-Learning Plattform focussing on sustainable values</p>
+    </header>
+
+    <nav>
+        <a href="unterseiten/unsereWerte.html">Our values</a>
+        <span class="has-dropdown">
+            <a href="#">Course overview</a>
+            <div class="dropdown">
+                <a href="unterseiten/SupplyChains.html">Supply Chains</a>
+                <a href="unterseiten/Verhalten.html">improve your behavior</a>
+                <a href="unterseiten/Reporting.html">Reporting</a>
+                <!-- Weitere Kategorien als Platzhalter -->
+            </div>
+        </span>
+        <a href="unterseiten/greencademyForBusiness.html">Greencademy for Business</a>
+        <a href="unterseiten/login0.html">Login</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to Greencademy</h2>
+        <img src="bilder/logo.png" alt="Greencademy Logo">
+        <p>Discover a green world of Learning!</p>
+    </section>
+    <section>
+        <h2>What is Greencadamy?</h2>
+        <p>At Greencadamy, we are more than just an E-Learning platform – we are a beacon of sustainability for businesses and their employees. Our mission is to empower organizations to embark on a journey towards eco-friendliness by providing a dynamic E-Learning environment.</p>
+        <p>For educators, Greencadamy offers a unique opportunity to showcase their expertise by creating and publishing tailor-made courses centered around sustainability. These courses serve as a nexus for fostering connections with participants, encouraging collaborative solutions, and collectively championing impactful changes.</p>
+        <p>Join us on this transformative adventure at Greencadamy, where learning becomes a catalyst for positive environmental change. Let's connect, inspire, and co-create a sustainable future together!</p>
+    </section>
+    <section>
+        <h2>Why we?</h2>
+      <div class="kacheln">
+  <div class="kachel">
+    <img src="bilder/Leading_Experts.png" alt="Leading experts">
+    <h2>Leading experts</h2>
+    <p>We work with leading experts in sustainability.</p>
+  </div>
+  <div class="kachel">
+    <img src="bilder/interactivity.png" alt="Interactive e-learning">
+    <h2>Interactive e-learning</h2>
+    <p>Online e-learning with quizzes, videos and individual tasks to integrate yourself in the sustainable development process.</p>
+  </div>
+  <div class="kachel">
+    <img src="bilder/diploma.png" alt="Diplomas and certificates">
+    <h2>Diplomas and certificates</h2>
+    <p>Ability to get extra badges and certificates after completing a session and exam.</p>
+  </div>
+</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Greencademy. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

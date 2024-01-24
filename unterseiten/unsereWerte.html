@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" href="../Bilder/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our values - Greencademy</title>
+    <style>
+        body {
+            font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8f0; /* Hintergrundfarbe in einem hellen Grün */
+            color: #004d00; /* Textfarbe in einem dunklen Grün */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('../Bilder/Wald.jpg'); /* Hintergrundbild im Header */
+            background-size: cover; /* Das Bild wird so skaliert, dass es den Header vollständig abdeckt */
+            background-position: center; /* Zentriert das Hintergrundbild im Header */
+            color: #ffffff; /* Header Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background-color: #004d00; /* Navigationsleisten Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Navigationsleisten Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff; /* Farbe der Navigationsleistenlinks in Weiß */
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #004d00;
+            z-index: 1;
+            width: max-content;
+            text-align: left;
+            margin-top: 2px; /* Minimaler Abstand für eine optimale Darstellung */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .has-dropdown:hover .dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+        section {
+            margin: 2em;
+            text-align: center;
+        }
+
+     .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #004d00;
+            z-index: 1;
+            width: max-content;
+            text-align: left;
+            margin-top: 2px; /* Minimaler Abstand für eine optimale Darstellung */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .has-dropdown:hover .dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+
+
+        .has-dropdown {
+            position: relative;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #ffffff;
+            padding: 0.5em;
+            text-decoration: none;
+        }
+
+
+
+        footer {
+            background-color: #006400; /* Footer Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Footer Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greencademy</h1>
+        <p>E-Learning Plattform</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="unsereWerte.html">Unsere Werte</a>
+        <span class="has-dropdown">
+            <a href="#">Course categories</a>
+            <div class="dropdown">
+                <a href="SupplyChains.html">Supply Chains</a>
+                <a href="Verhalten.html">Improve your behaviour</a>
+                <a href="Reporting.html">Reporting</a>
+                <!-- Weitere Kategorien als Platzhalter -->
+            </div>
+        </span>
+        <a href="greencademyForBusiness.html">Greencademy for Business</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section>
+        <h2>Unsere Werte</h2>
+
+        <img src="placeholder.jpg" alt="Gruppenbild" style="max-width: 100%; height: auto;">
+        <!-- Ersetze "placeholder.jpg" durch den Pfad zum tatsächlichen Bild -->
+
+        <h3>Vernetzung</h3>
+        <p>Wir möchten eine Plattform schaffen, auf der Lehrende die Möglichkeit dazu erhalten, ihre Themengebiete aus dem Raum Nachhaltigkeit an unsere User weiterzugegeben.</p>
+
+        <h3>Corporate Responsibility</h3>
+        <p>Wir bieten einen B2B Fokus, in dem Unternehmen ihre Mitarbeiter*Innen über nachhaltige Themen sensibilisieren können.</p>
+
+        <h3>Reliability</h3>
+        <p>Wir setzen uns dafür ein, dass die Lehrinhalte auf unserer Seite zuverlässig sind und nicht als Werbemaßnahme für Konzerne genutzt werden können.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Greencademy. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

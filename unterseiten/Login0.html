@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" href="../Bilder/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greencademy - Login</title>
+    <style>
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+             margin:0 auto;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+             margin:0 auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8f0; /* Hintergrundfarbe in einem hellen Grün */
+            color: #004d00; /* Textfarbe in einem dunklen Grün */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('../Bilder/Wald.jpg'); /* Hintergrundbild im Header */
+            background-size: cover; /* Das Bild wird so skaliert, dass es den Header vollständig abdeckt */
+            background-position: center; /* Zentriert das Hintergrundbild im Header */
+            color: #ffffff; /* Header Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background-color: #004d00; /* Navigationsleisten Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Navigationsleisten Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #004d00;
+            z-index: 1;
+            width: max-content;
+            text-align: left;
+            margin-top: 2px; /* Minimaler Abstand für eine optimale Darstellung */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .has-dropdown:hover .dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+        .has-dropdown {
+            position: relative;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #ffffff;
+            padding: 0.5em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown a:hover {
+            background-color: #00331a; /* Dunkleres Grün bei Hover-Effekt */
+        }
+
+        nav a {
+            color: #ffffff; /* Farbe der Navigationsleistenlinks in Weiß */
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #66ff66; /* Hellgrün bei Hover-Effekt */
+        }
+
+        section {
+            margin: 2em;
+            text-align: center; /* Änderung: Zentriert den Inhalt des section-Elements */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto; /* Änderung: Zentriert das Formular innerhalb des section-Elements */
+            background-color: #ffffff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #004d00; /* Dunkles Grün für Überschrift */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            color: #004d00; /* Dunkles Grün für Label-Text */
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+            border: 1px solid #66ff66; /* Helle grüne Umrandung für Input-Felder */
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #004d00; /* Dunkles Grün bei Fokus auf Input-Feld */
+        }
+
+        button {
+            background-color: #004d00;
+            color: #ffffff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00331a; /* Dunkleres Grün bei Hover-Effekt */
+        }
+
+        footer {
+            background-color: #006400; /* Footer Hintergrundfarbe in Dunkelgrün */
+            color: #ffffff; /* Footer Textfarbe in Weiß */
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greencademy</h1>
+        <p>E-Learning Plattform für nachhaltige Werte</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="unsereWerte.html">Unsere Werte</a>
+        <span class="has-dropdown">
+            <a href="#">Kurskategorien</a>
+            <div class="dropdown">
+                <a href="SupplyChains.html">Supply Chains</a>
+                <a href="Verhalten.html">Verhalten von Mitarbeitern</a>
+                <a href="Reporting.html">Reporting</a>
+                <!-- Weitere Kategorien als Platzhalter -->
+            </div>
+        </span>
+        <a href="greencademyForBusiness.html">Greencademy for Business</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" style="background-color:#9a9c98;" onclick="openModal()">Login über Organisation</button>
+            <button type="button" onclick="submitLoginForm()">Login</button>
+        </form>
+
+        <!-- Modal für Login über Organisation -->
+        <div id="organizationModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" style="max-width:400px;" required>
+
+                <label for="passwordOrganization">Passwort:</label>
+                <input type="password" id="passwordOrganization" name="passwordOrganization" style="max-width:400px;" required>
+
+                <label for="institutionDomain">Business Domain:</label>
+                <input type="text" id="Business Domain" style="max-width:400px;" placeholder="organisation.com" name="institutionDomain" required>
+                <div class="modal-content", style="border:none">
+                <button type="button" onclick="submitLoginFormWorker()" style="height:50px;width:200px">Login</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Greencademy. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function submitLoginForm() {
+            window.location = "login.html";
+        }
+        function submitLoginFormWorker() {
+            window.location = "login.html";
+        }
+
+        function openModal() {
+            document.getElementById('organizationModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('organizationModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
