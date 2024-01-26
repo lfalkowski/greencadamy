@@ -157,19 +157,19 @@
 <body>
     <header>
         <h1>Greencademy</h1>
-        <p>E-Learning Plattform für nachhaltige Werte</p>
+        <p>E-Learning platform for sustainable values</p>
     </header>
 
     <nav>
         <a href="../index.html">Home</a>
-        <a href="unsereWerte.html">Unsere Werte</a>
+        <a href="unsereWerte.html">Our Values</a>
         <span class="has-dropdown">
-            <a href="#">Kurskategorien</a>
+            <a href="#">Course Categories</a>
             <div class="dropdown">
                 <a href="SupplyChains.html">Supply Chains</a>
-                <a href="Verhalten.html">Verhalten von Mitarbeitern</a>
+                <a href="Verhalten.html">Employee Behavior</a>
                 <a href="Reporting.html">Reporting</a>
-                <!-- Weitere Kategorien als Platzhalter -->
+                <!-- Additional categories as placeholders -->
             </div>
         </span>
         <a href="greencademyForBusiness.html">Greencademy for Business</a>
@@ -177,53 +177,56 @@
     </nav>
 
     <section>
-        <h2 style="text-align: center;">Umfrage: Wie nachhaltig verhältst du dich im Arbeitsleben?</h2>
-        <label style="text-align: center;" for="frage1">Fährst du oft allein mit dem Auto zur Arbeit?</label>
+        <h2 style="text-align: center;">Survey: How sustainable are your behaviors in the workplace?</h2>
+        <label style="text-align: center;" for="question1">Do you often drive alone to work?</label>
 
-        <form id="umfrageForm" align="center">
+        <form id="surveyForm" align="center">
             <table align="center">
                 <tr>
-
-            <label>
-
-
-                <td><input type="radio" id="options" name="frage1" value="option1"></td>
-                <td>Ja, ich fahre täglich allein mit dem Auto zur Arbeit</td>
-            </label>
+                    <td>
+                        <label>
+                            <input type="radio" id="options" name="question1" value="option1">
+                        </label>
+                    </td>
+                    <td>Yes, I drive alone to work every day</td>
                 </tr>
                 <tr>
                     <td>
-            <label>
-                <input type="radio" id="options" name="frage1" value="option2"></td>
-                    <td>Nein, ich nutze die Möglichkeit von Fahrgemeinschaften</td>
-            </label>
+                        <label>
+                            <input type="radio" id="options" name="question1" value="option2">
+                        </label>
+                    </td>
+                    <td>No, I use carpooling opportunities</td>
                 </tr>
                 <tr>
-            <label>
-                <td><input type="radio" id="options" name="frage1" value="option3"></td>
-                <td>Nein, ich nutze ausschließlich den öffentlichen Personenverkehr</td>
-            </label>
+                    <td>
+                        <label>
+                            <input type="radio" id="options" name="question1" value="option3">
+                        </label>
+                    </td>
+                    <td>No, I exclusively use public transportation</td>
                 </tr>
                 <tr>
-            <label>
-                <td>
-                    <input type="radio" id="options" name="frage1" value="option3"></td>
-                <td>Nein, ich arbeite nur im Home Office</td>
-            </label>
+                    <td>
+                        <label>
+                            <input type="radio" id="options" name="question1" value="option3">
+                        </label>
+                    </td>
+                    <td>No, I work only from home</td>
                 </tr>
             </table>
-            <button type="button" onclick="submitForm()">Absenden</button>
+            <button type="button" onclick="submitForm()">Submit</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Greencademy. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Greencademy. All rights reserved.</p>
     </footer>
 
     <script>
         function submitForm() {
-            // Hier könntest du AJAX-Anfragen oder weitere Aktionen hinzufügen, bevor die Weiterleitung erfolgt.
-            window.location.href = 'Login3.html'; // Weiterleitung zur pseudo.html Seite
+            // Here you could add AJAX requests or other actions before the redirection.
+            window.location.href = 'Login3.html'; // Redirect to the Login3.html page
         }
     </script>
 
