@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greencademy - Video Course Providers</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8f0;
+            color: #004d00;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('../Bilder/Wald.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        img {
+        width: 600px;
+        height:auto;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #004d00;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .has-dropdown {
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #004d00;
+            z-index: 1;
+            width: max-content;
+            text-align: left;
+            margin-top: 2px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .has-dropdown:hover .dropdown {
+            display: block;
+            opacity: 1;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #ffffff;
+            padding: 0.5em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .has-dropdown:hover a {
+            color: #80ff80;
+        }
+
+        section {
+            margin: 2em;
+            text-align: center;
+        }
+
+        .offer-tile {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
+        .offer-tile h3 {
+            color: #004d00;
+        }
+
+        footer {
+            background-color: #006400;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greencademy</h1>
+        <p>E-Learning Platform for Sustainable Learning</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="unsereWerte.html">Our Values</a>
+        <span class="has-dropdown">
+            <a href="#">Course categories</a>
+            <div class="dropdown">
+                <a href="SupplyChains.html">Supply Chains</a>
+                <a href="Verhalten.html">Behaviour</a>
+                <a href="Reporting.html">Reporting</a>
+            </div>
+        </span>
+        <a href="greencademyForBusiness.html">Greencademy for Business</a>
+        <a href="Login0.html">Login</a>
+    </nav>
+    <section>
+        <img src="../Bilder/LogoForTeachers.png">
+    </section>
+    <section>
+        <div class="offer-tile">
+            <h3>Featured Courses</h3>
+            <p>Showcase your courses to our global audience. Reach learners passionate about sustainability.</p>
+            <ul>
+                <li>High visibility on our platform</li>
+                <li>Targeted marketing to relevant audiences</li>
+                <li>Detailed analytics and feedback</li>
+            </ul>
+            <p>Contact us for personalized promotion opportunities.</p>
+        </div>
+        <img src="../Bilder/OnlineCourses.jpg">
+        <div class="offer-tile">
+            <h3>Interactive Community</h3>
+            <p>Engage with a vibrant community of learners and educators. Join forums, discussions, and events.</p>
+            <ul>
+                <li>Connect with like-minded individuals</li>
+                <li>Participate in webinars and Q&A sessions</li>
+                <li>Promote your expertise and courses</li>
+            </ul>
+            <p>Enhance your brand presence in the sustainable education space.</p>
+        </div>
+
+        <img src="../Bilder/Community.webp">
+
+        <div class="offer-tile">
+            <h3>Design Freedom</h3>
+            <p>Express your unique style through our flexible course creation tools. Design engaging content effortlessly.</p>
+            <ul>
+                <li>User-friendly course creation interface</li>
+                <li>Upload videos, quizzes, and interactive content</li>
+                <li>Customize your course page to reflect your brand</li>
+            </ul>
+            <p>Unleash your creativity and captivate your audience.</p>
+        </div>
+    </section>
+    <img src="../Bilder/GreencadamyForTeachers.jpg">
+    <section style="font-size:30px;">
+<b><i>Come together to construct a future that is both collective and sustainable! To delve deeper into our shared goals and arrange a personalized interview session, where we can explore our mutual objectives, please reach out to our dedicated teacher support at teachers@greencadamy.com.</i></b>
+    </section>
+    <footer>
+        <p>&copy; 2024 Greencademy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
